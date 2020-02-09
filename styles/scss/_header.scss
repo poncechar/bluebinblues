@@ -1,0 +1,25 @@
+.headerContainer {
+   text-align: center;
+   overflow: hidden;
+}
+
+.wrapper {
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 0;
+}
+
+.heroHeader {
+	width: 100%;
+	min-height: 100vh;
+	background: url(../assets/hero-img.jpg) no-repeat top center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.heading {
+   position: relative;
+   top: 11rem;
+}

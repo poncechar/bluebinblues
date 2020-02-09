@@ -1,0 +1,137 @@
+
+------- Test your blue bin knowledge -------
+
+This app will allow the user to test their knowledge
+of what goes in the blue bin (recycling bin) in Toronto.
+
+                 // MVP //
+-------------------------------------------
+
+My MVP is creating a simple quiz that functions as it should.
+
+- 8 questions, 4 options 1 result
+- restart functionality
+- all of the functions, methods, and variables work properly
+- all information  & items on the page is displayed properly for the user and
+functions as it should
+- accessible for all users (tabbing, enter/space allows
+user to go to next question etc)
+- dry code (in general)
+
+
+            // Stretch Goals //
+-------------------------------------------
+
+- fix up the design if it's not where I want it to be
+when app is complete
+- dryer code (if possible)
+- add more media queries (if not enough)
+- add more design elements (illustrations, etc)
+
+
+             // Pseudo code //
+-------------------------------------------
+
+The app will ask the user 8 questions +
+there will be 4 options for the user to choose from.
+Only one answer will be correct per question!
+
+Set up the structure of the quiz in HTML file:
+      create a div to hold quiz
+      create 8 divs to hold each question
+      create a button for 'next question' button
+      create a final div to display user's score
+      create a button to restart game
+
+   - set id's to each div to select and store
+   references to them in variables -
+
+Set up quiz functions:
+      create a blueBinQuiz function (will display quiz right away)
+      create a showScore function (will display score for user)
+      create a myQuestions function
+
+On submitting the quiz, show results
+      add an event listener to the submit button and when the user
+      clicks, it will show their score
+
+Set up variables in Javascript file:
+      create variable for quiz container
+      create variable for question container
+      create variable for html radio button
+      create variable for questions
+      create variable for 'next question' button
+      create variable for score container
+      create variable for restart button
+
+      create a variable to store list of possible answers
+      in a loop
+            code to run for each question
+
+Set up a variable that stores the HTML questions & answers
+(this will go in the loop)
+      create a variable that stores user's choices from the html output
+
+The user's score starts at 0
+****
+ex: set total score to 0
+    set score counter to 1
+
+Build HTML for each question...
+Loop through each
+
+questions variable . forEach function
+   answers variable that stores list of possible answers
+   loop
+   radio button
+
+
+Set up an array with objects (of the questions) under the questions variable
+****
+ex: questions variable
+   question: "lorem lorem",
+   answers:
+      a: 'this one'
+      b: 'that one'
+      c: 'maybe this'
+      d: 'maybe that'
+   
+   correct answer variable: 'the correct answer key'
+   ,
+
+   -- repeat until all questions are done --
+
+****** how to link answers to an image instead of having questions as text???? ******
+add images to elements to make dynamic?
+
+If the user gets the answer correct, they will gain
+a point and will be prompted.
+****
+ex: if user's answer is correct
+      prompt 'correct!'
+    else
+      prompt 'wrong :( ...along with a reason why wrong answer is
+      not allowed in the blue bin'
+
+^ The user will also receive information as to why
+the "wrongAnswer" is not allowed in the blue bin.
+
+If the user gets the answer wrong, their score will remain
+the same. They won't lose any points.
+****
+ex: if user's answer is correct
+      create a function that will add 1 point to user's score
+    else
+      create a function that will maintain the user's score
+
+If the user doesn't choose an answer, they will be alerted to do so.
+****
+ex: if user's answer is null
+      alert user to choose an answer
+
+Once the user has finished the quiz, they get their results
+but they also have the option to restart.
+****
+ex: define a function that restarts the game
+      when user clicks on restart button, run a function
+      that resets all of the variables.
