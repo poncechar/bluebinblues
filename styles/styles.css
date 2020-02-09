@@ -218,14 +218,19 @@ h1 {
   font-style: italic;
   font-size: 6rem;
   margin: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, rgba(255, 255, 255, 0)), color-stop(65%, #ffffff));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #ffffff 65%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, rgba(255, 255, 255, 0)), color-stop(65%, paleturquoise));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, paleturquoise 65%);
   display: inline;
 }
 
 h2 {
   margin-top: 3rem;
   font-size: 2rem;
+}
+
+span {
+  font-weight: 700;
+  font-style: italic;
 }
 
 button {
@@ -240,7 +245,6 @@ button {
 
 button:hover {
   color: #000000;
-  border-style: solid;
   cursor: pointer;
   background: paleturquoise;
 }
