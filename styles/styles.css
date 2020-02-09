@@ -211,21 +211,33 @@ html, body {
 
 .heading {
   position: relative;
-  top: 11rem;
+  top: 9rem;
+}
+
+.doodle {
+  position: absolute;
+  width: 12%;
+  top: 33%;
+  right: 7%;
 }
 
 h1 {
-  font-style: italic;
-  font-size: 6rem;
+  font-size: 6.5rem;
+  letter-spacing: 0.8rem;
   margin: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, rgba(255, 255, 255, 0)), color-stop(65%, paleturquoise));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, paleturquoise 65%);
   display: inline;
 }
 
 h2 {
   margin-top: 3rem;
-  font-size: 2rem;
+  margin-bottom: 0;
+  font-size: 2.3rem;
+}
+
+h3 {
+  padding: 0;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 span {
@@ -238,13 +250,53 @@ button {
   font-weight: 700;
   color: #ffffff;
   background: #000000;
-  padding: 10px 20px;
+  padding: 8px 16px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 7px 7px 0px 0px white;
+  box-shadow: 7px 7px 0px 0px white;
 }
 
 button:hover {
   color: #000000;
   cursor: pointer;
   background: paleturquoise;
+}
+
+h1,
+.highlight {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, rgba(255, 255, 255, 0)), color-stop(50%, paleturquoise));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, paleturquoise 50%);
+}
+
+.highlight {
+  text-transform: uppercase;
+}
+
+.quizContainer1,
+.quizContainer2 {
+  padding-bottom: 6rem;
+}
+
+.quizContainer2 {
+  background-color: whitesmoke;
+}
+
+.question {
+  padding: 4.5rem;
+  text-align: center;
+}
+
+.quizImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quizImageContainer img {
+  display: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
 }

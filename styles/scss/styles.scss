@@ -2,16 +2,22 @@
 @import "header";
 
 h1 {
-   font-style: italic;
-   font-size: 6rem;
+   font-size: 6.5rem;
+   letter-spacing: 0.8rem;
    margin: 0;
-   background: linear-gradient(180deg, rgba(255,255,255,0) 65%, paleturquoise 65%);
    display: inline;
 }
 
 h2 {
    margin-top: 3rem;
-   font-size: 2rem;
+   margin-bottom: 0;
+   font-size: 2.3rem;
+}
+
+h3 {
+   padding: 0;
+   margin-bottom: 2rem;
+   font-size: 1.5rem;
 }
 
 span {
@@ -24,12 +30,49 @@ button {
    font-weight: 700;
    color: #ffffff;
    background: #000000;
-   padding: 10px 20px;
-	transition: 0.2s ease-in-out;
+   padding: 8px 16px;
+   transition: 0.2s ease-in-out;
+   -webkit-box-shadow: 7px 7px 0px 0px rgba(255,255,255,1);
+   -moz-box-shadow: 7px 7px 0px 0px rgba(255,255,255,1);
+   box-shadow: 7px 7px 0px 0px rgba(255,255,255,1);
 }
 
 button:hover {
    color: #000000;
 	cursor: pointer;
 	background: paleturquoise;
+}
+
+h1,
+.highlight {
+   background: linear-gradient(180deg, rgba(255,255,255,0) 65%, paleturquoise 50%);
+}
+
+.highlight {
+   text-transform: uppercase;
+}
+
+.quizContainer1,
+.quizContainer2 {
+   padding-bottom: 6rem;
+}
+
+.quizContainer2 {
+   background-color: whitesmoke;
+}
+
+.question {
+   padding: 4.5rem;
+   text-align: center;
+}
+
+.quizImageContainer {
+   display: flex;
+}
+
+.quizImageContainer img {
+   display: row;
+   flex-wrap: wrap;
+   width: calc(100% - 10px);
+   margin-bottom: 10px;
 }
