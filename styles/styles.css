@@ -296,9 +296,16 @@ h1,
 }
 
 .quizImageContainer img {
-  display: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: calc(100% - 10px);
   margin-bottom: 10px;
+}
+
+.submitButton {
+  margin: 5rem 0;
 }

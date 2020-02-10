@@ -73,8 +73,12 @@ h1,
 }
 
 .quizImageContainer img {
-   display: row;
+   flex-direction: row;
    flex-wrap: wrap;
    width: calc(100% - 10px);
    margin-bottom: 10px;
+}
+
+.submitButton {
+   margin: 5rem 0;
 }
