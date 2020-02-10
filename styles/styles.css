@@ -275,6 +275,10 @@ h1,
   text-transform: uppercase;
 }
 
+.hint {
+  margin-top: 2rem;
+}
+
 .quizContainer1,
 .quizContainer2 {
   padding-bottom: 6rem;
@@ -285,7 +289,7 @@ h1,
 }
 
 .question {
-  padding: 4.5rem;
+  padding: 4rem;
   text-align: center;
 }
 
