@@ -187,7 +187,8 @@ html, body {
   overflow-x: hidden;
 }
 
-.headerContainer {
+.headerContainer,
+.submitContainer {
   text-align: center;
   overflow: hidden;
 }
@@ -256,7 +257,8 @@ span {
   font-style: italic;
 }
 
-button {
+button,
+input[type=submit] {
   font-size: 1.4rem;
   font-weight: 700;
   color: #ffffff;

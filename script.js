@@ -54,7 +54,7 @@ const quizQuestion4 = [
    }];
 const quizQuestion5 = [
    {
-      question5: 'It can be tricky figuring out what kinds of food packaging are actually recyclable when grocery shopping.',
+      question5: 'It can be tricky figuring out what kinds of food packaging are actually recyclable.',
       choices: {
          a: 'frozen food boxes',
          b: 'chip bags',
@@ -178,98 +178,103 @@ const quizQuestion8 = [
       $('#blackPlastic2').append(`<h3>${choice.d}</h3>`);
    });
 
+let score = 0;
 
 $(function() {
 
+   $('form').submit(function(e){
+      e.preventDefault();
+   // check if answer is correct
 
-// check if answer is correct
-   $("input[name='question1']").click(function(){
-      const userAnswer = $("input[name='question1']:checked").val();
-      const correctAnswer = 'coffeeCup';
+      $("input[name='question1']").click(function(){
+         const userAnswer = $("input[name='question1']:checked").val();
+         const correctAnswer = 'coffeeCup';
 
-      if (userAnswer === correctAnswer) {
-         console.log('correct!')
-      } else {
-         console.log('not correct!')
-      }
+         if (userAnswer === correctAnswer) {
+            score++
+         } else {
+            
+         }
+      });
+
+      $("input[name='question2']").click(function () {
+         const userAnswer = $("input[name='question2']:checked").val();
+         const correctAnswer = 'waterBottles';
+
+         if (userAnswer === correctAnswer) {
+            score++
+         } else {
+            
+         }
+      });
+
+      $("input[name='question3']").click(function () {
+         const userAnswer = $("input[name='question3']:checked").val();
+         const correctAnswer = 'iceCream';
+
+         if (userAnswer === correctAnswer) {
+            score++
+         } else {
+            console.log('not correct!')
+         }
+      });
+
+      $("input[name='question4']").click(function () {
+         const userAnswer = $("input[name='question4']:checked").val();
+         const correctAnswer = 'styrofoam';
+
+         if (userAnswer === correctAnswer) {
+            score++
+         } else {
+
+         }
+      });
+
+      $("input[name='question5']").click(function () {
+         const userAnswer = $("input[name='question5']:checked").val();
+         const correctAnswer = 'saladPackaging';
+
+         if (userAnswer === correctAnswer) {
+            score++
+         } else {
+            
+         }
+      });
+
+      $("input[name='question6']").click(function () {
+         const userAnswer = $("input[name='question6']:checked").val();
+         const correctAnswer = 'receipt';
+
+         if (userAnswer === correctAnswer) {
+            score++
+         } else {
+            
+         }
+      });
+
+      $("input[name='question7']").click(function () {
+         const userAnswer = $("input[name='question7']:checked").val();
+         const correctAnswer = 'toothbrush';
+
+         if (userAnswer === correctAnswer) {
+            score++
+         } else {
+            
+         }
+      });
+
+      $("input[name='question8']").click(function () {
+         const userAnswer = $("input[name='question8']:checked").val();
+         const correctAnswer = 'blackPlastic2';
+
+         if (userAnswer === correctAnswer) {
+            score++
+         } else {
+            
+         }
+      });
+
+
    });
 
-   $("input[name='question2']").click(function () {
-      const userAnswer = $("input[name='question2']:checked").val();
-      const correctAnswer = 'waterBottles';
-
-      if (userAnswer === correctAnswer) {
-         console.log('correct!')
-      } else {
-         console.log('not correct!')
-      }
-   });
-
-   $("input[name='question3']").click(function () {
-      const userAnswer = $("input[name='question3']:checked").val();
-      const correctAnswer = 'iceCream';
-
-      if (userAnswer === correctAnswer) {
-         console.log('correct!')
-      } else {
-         console.log('not correct!')
-      }
-   });
-
-   $("input[name='question4']").click(function () {
-      const userAnswer = $("input[name='question4']:checked").val();
-      const correctAnswer = 'styrofoam';
-
-      if (userAnswer === correctAnswer) {
-         console.log('correct!')
-      } else {
-         console.log('not correct!')
-      }
-   });
-
-   $("input[name='question5']").click(function () {
-      const userAnswer = $("input[name='question5']:checked").val();
-      const correctAnswer = 'saladPackaging';
-
-      if (userAnswer === correctAnswer) {
-         console.log('correct!')
-      } else {
-         console.log('not correct!')
-      }
-   });
-
-   $("input[name='question6']").click(function () {
-      const userAnswer = $("input[name='question6']:checked").val();
-      const correctAnswer = 'receipt';
-
-      if (userAnswer === correctAnswer) {
-         console.log('correct!')
-      } else {
-         console.log('not correct!')
-      }
-   });
-
-   $("input[name='question7']").click(function () {
-      const userAnswer = $("input[name='question7']:checked").val();
-      const correctAnswer = 'toothbrush';
-
-      if (userAnswer === correctAnswer) {
-         console.log('correct!')
-      } else {
-         console.log('not correct!')
-      }
-   });
-
-   $("input[name='question8']").click(function () {
-      const userAnswer = $("input[name='question8']:checked").val();
-      const correctAnswer = 'blackPlastic2';
-
-      if (userAnswer === correctAnswer) {
-         console.log('correct!')
-      } else {
-         console.log('not correct!')
-      }
-   });
-
-
-})
+});
