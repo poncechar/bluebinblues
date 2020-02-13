@@ -233,13 +233,23 @@ h1 {
 h2 {
   margin-top: 3rem;
   margin-bottom: 0;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
 }
 
 h3 {
+  margin: 0;
   padding: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.cityHeader {
+  margin-top: 1rem;
 }
 
 span {
@@ -336,6 +346,6 @@ h1,
 }
 
 [type=radio]:checked + img {
-  -webkit-box-shadow: 8px 8px 0px 0px paleturquoise;
-  box-shadow: 8px 8px 0px 0px paleturquoise;
+  -webkit-box-shadow: 9px 9px 0px 0px paleturquoise;
+  box-shadow: 9px 9px 0px 0px paleturquoise;
 }

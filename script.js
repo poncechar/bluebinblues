@@ -41,7 +41,7 @@ const quizQuestion4 = [
          a: 'styrofoam',
          b: 'yogurt cups',
          c: 'dirty pizza boxes',
-         d: 'black plastic',
+         d: 'black plastic takeaway containers',
       },
          correctAnswer: 'a'
    }];
@@ -100,14 +100,9 @@ const quizQuestion8 = [
       $('#coffeeCup').append(`<h3>${quizChoice.c}</h3>`);
       $('#beerBottles').append(`<h3>${quizChoice.d}</h3>`);
 
-      $(`input[type='radio']`).click(function() {
-         const checkedAnswer = $(`input[id='coffeeCupOption']:checked`);
-         if(checkedAnswer === correctAnswer) {
-            console.log('hi');
-         } else {
-            console.log('wut')
-         }
-      })
+      $('input').on('click', function(){
+         console.log('clicking!');
+      });
 
    });
 
@@ -135,7 +130,7 @@ const quizQuestion8 = [
       const question = currentQuestion.question4;
       const choice = currentQuestion.choices;
       $('#titleQuestion4').append(`${question}`);
-      $('#styrofoamContainer').append(`<h3>${choice.a}</h3>`);
+      $('#styrofoam').append(`<h3>${choice.a}</h3>`);
       $('#yogurtCup').append(`<h3>${choice.b}</h3>`);
       $('#pizzaBox').append(`<h3>${choice.c}</h3>`);
       $('#blackPlastic1').append(`<h3>${choice.d}</h3>`);
