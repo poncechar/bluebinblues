@@ -83,6 +83,14 @@ h1,
    width: calc(100% - 15px);
    margin-bottom: 10px;
 }
+.quizOption img {
+   opacity: 1;
+   transition: .3s ease-in-out;
+}
+
+.quizOption:hover img {
+   opacity: .5;
+}
 
 .submitButton {
    margin: 5rem 0;

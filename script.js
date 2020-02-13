@@ -1,6 +1,6 @@
 const quizQuestion1 = [
    {
-      question1: 'Which of the following should <span class="highlight">*!~NEVER~!*</span> go in the blue bin? (HINT: this particular item is one of the TOP blue bin offenders)',
+      question1: 'Which of the following should <span class="highlight">*!~NEVER~!*</span> go in the blue bin?',
       choices: {
          a: 'aluminum cans',
          b: 'milk glass bottles',
@@ -36,7 +36,7 @@ const quizQuestion3 = [
 
 const quizQuestion4 = [
    {
-      question4: 'Take-away food containers can easily contaminate the recycling stream if not carefully disposed of.Contrary to popular belief, unfortunately not all are recyclable 🥺',
+      question4: 'Take-away food containers can easily contaminate the recycling stream if not carefully disposed of. Contrary to popular belief, unfortunately not all are recyclable 🥺',
       choices: {
          a: 'styrofoam',
          b: 'yogurt cups',
@@ -91,13 +91,24 @@ const quizQuestion8 = [
    }];
 
    quizQuestion1.forEach((currentQuestion) => {
-      const question = currentQuestion.question1;
-      const choice = currentQuestion.choices;
-      $('#titleQuestion1').append(`${question}`);
-      $('#aluminumCan').append(`<h3>${choice.a}</h3>`);
-      $('#milkBottle').append(`<h3>${choice.b}</h3>`);
-      $('#coffeeCup').append(`<h3>${choice.c}</h3>`);
-      $('#beerBottles').append(`<h3>${choice.d}</h3>`);
+      const question1 = currentQuestion.question1;
+      const quizChoice = currentQuestion.choices;
+      const correctAnswer = currentQuestion.choices.c;
+      $('#titleQuestion1').append(`${question1}`);
+      $('#aluminumCan').append(`<h3>${quizChoice.a}</h3>`);
+      $('#milkBottle').append(`<h3>${quizChoice.b}</h3>`);
+      $('#coffeeCup').append(`<h3>${quizChoice.c}</h3>`);
+      $('#beerBottles').append(`<h3>${quizChoice.d}</h3>`);
+
+      $(`input[type='radio']`).click(function() {
+         const checkedAnswer = $(`input[id='coffeeCupOption']:checked`);
+         if(checkedAnswer === correctAnswer) {
+            console.log('hi');
+         } else {
+            console.log('wut')
+         }
+      })
+
    });
 
       quizQuestion2.forEach((currentQuestion) => {
@@ -160,13 +171,14 @@ const quizQuestion8 = [
       $('#shampoo').append(`<h3>${choice.d}</h3>`);
    });
 
+
    quizQuestion8.forEach((currentQuestion) => {
       const question = currentQuestion.question8;
       const choice = currentQuestion.choices;
+      const correctAnswer = currentQuestion.choices.d;
       $('#titleQuestion8').append(`${question}`);
       $('#bottleCaps').append(`<h3>${choice.a}</h3>`);
       $('#lotionBottle').append(`<h3>${choice.b}</h3>`);
       $('#juice').append(`<h3>${choice.c}</h3>`);
       $('#blackPlastic2').append(`<h3>${choice.d}</h3>`);
    });
-
