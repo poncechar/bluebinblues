@@ -187,8 +187,8 @@ $(function() {
          const correctAnswer = 'coffeeCup';
 
          if (userAnswer === correctAnswer) {
+            console.log('correct')
             score++
-            console.log('correct');
          } else {
             score
             console.log('not correct');
@@ -274,3 +274,9 @@ $(function() {
          }
       });
    });
+
+   $('form').on('submit', function (e) {
+      e.preventDefault();
+      $('.finalScoreContainer').html(`<h2>You got ${score} out of 8 correct!</h2>`)
+   });
+

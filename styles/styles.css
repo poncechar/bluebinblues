@@ -291,7 +291,8 @@ h1,
 }
 
 .quizContainer1,
-.quizContainer2 {
+.quizContainer2,
+.finalQuizContainer {
   padding-bottom: 6rem;
 }
 
@@ -308,6 +309,13 @@ h1,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.finalScoreContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0;
 }
 
 .quizImageContainer img {
