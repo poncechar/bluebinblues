@@ -306,10 +306,26 @@ h1,
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: calc(100% - 10px);
+  width: calc(100% - 15px);
   margin-bottom: 10px;
 }
 
 .submitButton {
   margin: 5rem 0;
+}
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio]:checked + img {
+  -webkit-box-shadow: 8px 8px 0px 0px paleturquoise;
+  box-shadow: 8px 8px 0px 0px paleturquoise;
 }

@@ -1,100 +1,172 @@
-function blueBinQuiz(){};
-function showResults(){};
+const quizQuestion1 = [
+   {
+      question1: 'Which of the following should <span class="highlight">*!~NEVER~!*</span> go in the blue bin? (HINT: this particular item is one of the TOP blue bin offenders)',
+      choices: {
+         a: 'aluminum cans',
+         b: 'milk glass bottles',
+         c: 'coffee cups',
+         d: 'glass beer bottles',
+      },
+         correctAnswer: 'c'
+   }];
 
-const quizQuestions = [
+const quizQuestion2 = [
    {
-      question: 'Which of the following should *!~NEVER~!* go in the blue bin ? (HINT: this particular item is one of the TOP blue bin offenders)',
+      question2: 'Approximately 30% of what is put in the blue bin doesn’t belong there. Are you able to choose the <span class="highlight">recyclable item</span> out of these options?',
       choices: {
-         a: 'assets/question1/R-can.jpg',
-         b: 'assets/question1/R-milk-bottles.jpg',
-         c: 'assets/question1/N-coffee-cup.jpg',
-         d: 'assets/question1/R-beer-bottles.jpg'
+         a: 'broken glass bottle',
+         b: 'coffee pods',
+         c: 'coffee packaging',
+         d: 'plastic water bottles (not the caps)',
       },
-      correctAnswer: 'c'
-   },
-   {
-      question: 'Approximately 30% of what is put in the blue bin doesn’t belong there. Are you able to choose the RECYCLABLE ITEM out of these options?',
-      choices: {
-         a: 'assets/question2/N-broken-glass.jpg',
-         b: 'assets/queston2/N-coffee-pods.jpg',
-         c: 'assets/question2/N-coffee-bags.jpg',
-         d: 'assets/question2/R-water-bottles.jpg'
-      },
-      correctAnswer: 'd'
-      },
-   {
-      question: 'Not all packaging is the same. Which item is NOT ACCEPTED in the blue bin?',
-      choices: {
-         a: 'assets/question3/N-icecream.jpg',
-         b: 'assets/question3/R-eggcarton.jpg',
-         c: 'assets/question3/R-mail-package.jpg',
-         d: 'assets/question3/R-milkcarton.jpg'
-      },
-      correctAnswer: 'a'
-      },
-   {
-      question: 'Take - away food containers can easily contaminate the recycling stream if not carefully disposed of.Contrary to popular belief, unfortunately not all are recyclable 🥺 Which container belongs in the blue bin(WHEN FULLY RINSED)?',
-      choices: {
-         a: 'assets/question4/R-styrofoam.jpg',
-         b: 'assets/question4/N-blackplastic.jpg',
-         c: 'assets/question4/N-papertogo.jpg',
-         d: 'assets/question4/N-pizzabox.jpg'
-      },
-      correctAnswer: 'a'
-   },
-   {
-      question: 'It can be tricky figuring out what kinds of food packaging are actually recyclable when grocery shopping. Which of these is recyclable and DOES *NOT* BELONG in the landfill?',
-      choices: {
-         a: 'assets/question5/N-frozen-boxes.jpg',
-         b: 'assets/question5/N-chipbag.jpg',
-         c: 'assets/question5/R-saladpackaging.jpg',
-         d: 'assets/question5/N-standup.jpg'
-      },
-      correctAnswer: 'c'
-   },
-   {
-      question: 'Not all paper is created equal! Which NON-RECYCLABLE PAPER ITEM continually sneaks into our blue bins?',
-      choices: {
-         a: 'assets/question6/N-receipt.jpg',
-         b: 'assets/question6/R-shoppingbag.jpg',
-         c: 'assets/question6/R-magazines.jpg',
-         d: 'assets/question6/R-books.jpg'
-      },
-      correctAnswer: 'a'
-   },
-   {
-      question: 'Along with paper materials, not all plastics are recyclable. Canada recycles just 9% of its plastics with the rest dumped in landfill and incinerators or tossed away as litter. Can you guess which commonly used plastic is THE MOST COMPLICATED to recycle across the board?',
-      choices: {
-         a: 'assets/question7/N-toothbrush.jpg',
-         b: 'assets/question7/R-plasticbags.jpg',
-         c: 'assets/question7/R-icedcoffee.jpg',
-         d: 'assets/question7/R-shampoo.jpg'
-      },
-      correctAnswer: 'a'
-   },
-   {
-      question: 'And lastly, which plastic cannot be sorted mechanically at the recycling facility because the optical sorting technology simply CANNOT RECOGNIZE IT?',
-      choices: {
-         a: 'assets/question8/R-bottlecaps.jpg',
-         b: 'assets/question8/R-lotionbottle.jpg',
-         c: 'assets/question8/R-juice.jpg',
-         d: 'assets/question8/N-blackplastic.jpg'
-      },
-      correctAnswer: 'd'
-   }
-   ];
+         correctAnswer: 'd'
+   }];
 
-// console.log(quizQuestions[1]);
+const quizQuestion3 = [
+   {
+      question3: 'Not all packaging is the same. Which item is NOT ACCEPTED in the blue bin?',
+      choices: {
+         a: 'ice cream container',
+         b: 'egg cartons',
+         c: 'mail packaging',
+         d: 'milk carton',
+      },
+         correctAnswer: 'a'
+   }];
 
-const currentQuestion = 0;
-const correctAnswers = 0;
-// const quizScore = 0;
+const quizQuestion4 = [
+   {
+      question4: 'Take-away food containers can easily contaminate the recycling stream if not carefully disposed of.Contrary to popular belief, unfortunately not all are recyclable 🥺',
+      choices: {
+         a: 'styrofoam',
+         b: 'yogurt cups',
+         c: 'dirty pizza boxes',
+         d: 'black plastic',
+      },
+         correctAnswer: 'a'
+   }];
+const quizQuestion5 = [
+   {
+      question5: 'It can be tricky figuring out what kinds of food packaging are actually recyclable when grocery shopping.',
+      choices: {
+         a: 'frozen food boxes',
+         b: 'chip bags',
+         c: 'plastic salad packaging',
+         d: 'stand-up food pouches',
+      },
+         correctAnswer: 'c'
+   }];
+const quizQuestion6 = [
+   {
+      question6: 'Not all paper is created equal! Which <span class="highlight">NON-RECYCLABLE PAPER ITEM</span> continually sneaks into our blue bins?',
+      choices: {
+         a: 'thermal receipts',
+         b: 'paper shopping bags',
+         c: 'magazines',
+         d: 'books',
+      },
+         correctAnswer: 'a'
+   }];
+const quizQuestion7 = [
+   {
+      question7: 'Along with paper materials, not all plastics are recyclable. Canada recycles just 9% of its plastics with the rest dumped in landfill and incinerators or tossed away as litter.',
+      choices: {
+         a: 'toothbrushes',
+         b: 'plastic bags',
+         c: 'plastic coffee cups',
+         d: 'shampoo bottles',
+      },
+         correctAnswer: 'a'
+   }];
+const quizQuestion8 = [
+   {
+      question8: 'And lastly, which plastic cannot be sorted mechanically at the recycling facility because the optical sorting technology simply <span class="highlight">cannot recognize it?</span>',
+      choices: {
+         a: 'plastic water bottle caps',
+         b: 'lotion bottles',
+         c: 'plastic juice bottles',
+         d: 'black plastic takeaway containers',
+      },
+         correctAnswer: 'd'
+   }];
 
-function setupQuiz() {
-   const htmlToAppend = []
+   quizQuestion1.forEach((currentQuestion) => {
+      const question = currentQuestion.question1;
+      const choice = currentQuestion.choices;
+      $('#titleQuestion1').append(`${question}`);
+      $('#aluminumCan').append(`<h3>${choice.a}</h3>`);
+      $('#milkBottle').append(`<h3>${choice.b}</h3>`);
+      $('#coffeeCup').append(`<h3>${choice.c}</h3>`);
+      $('#beerBottles').append(`<h3>${choice.d}</h3>`);
+   });
 
-   quizQuestions.forEach(
+      quizQuestion2.forEach((currentQuestion) => {
+      const question = currentQuestion.question2;
+      const choice = currentQuestion.choices;
+         $('#titleQuestion2').append(`${question}`);
+         $('#brokenGlass').append(`<h3>${choice.a}</h3>`);
+         $('#coffeePods').append(`<h3>${choice.b}</h3>`);
+         $('#coffeeBags').append(`<h3>${choice.c}</h3>`);
+         $('#waterBottles').append(`<h3>${choice.d}</h3>`);
+   });
 
-   )
-};
+   quizQuestion3.forEach((currentQuestion) => {
+      const question = currentQuestion.question3;
+      const choice = currentQuestion.choices;
+      $('#titleQuestion3').append(`${question}`);
+      $('#iceCream').append(`<h3>${choice.a}</h3>`);
+      $('#eggCarton').append(`<h3>${choice.b}</h3>`);
+      $('#package').append(`<h3>${choice.c}</h3>`);
+      $('#milk').append(`<h3>${choice.d}</h3>`);
+   });
+
+   quizQuestion4.forEach((currentQuestion) => {
+      const question = currentQuestion.question4;
+      const choice = currentQuestion.choices;
+      $('#titleQuestion4').append(`${question}`);
+      $('#styrofoamContainer').append(`<h3>${choice.a}</h3>`);
+      $('#yogurtCup').append(`<h3>${choice.b}</h3>`);
+      $('#pizzaBox').append(`<h3>${choice.c}</h3>`);
+      $('#blackPlastic1').append(`<h3>${choice.d}</h3>`);
+   });
+
+   quizQuestion5.forEach((currentQuestion) => {
+      const question = currentQuestion.question5;
+      const choice = currentQuestion.choices;
+      $('#titleQuestion5').append(`${question}`);
+      $('#frozenFoodBoxes').append(`<h3>${choice.a}</h3>`);
+      $('#chipBag').append(`<h3>${choice.b}</h3>`);
+      $('#saladPackaging').append(`<h3>${choice.c}</h3>`);
+      $('#standUp').append(`<h3>${choice.d}</h3>`);
+   });
+
+   quizQuestion6.forEach((currentQuestion) => {
+      const question = currentQuestion.question6;
+      const choice = currentQuestion.choices;
+      $('#titleQuestion6').append(`${question}`);
+      $('#receipt').append(`<h3>${choice.a}</h3>`);
+      $('#shoppingBag').append(`<h3>${choice.b}</h3>`);
+      $('#magazines').append(`<h3>${choice.c}</h3>`);
+      $('#books').append(`<h3>${choice.d}</h3>`);
+   });
+
+   quizQuestion7.forEach((currentQuestion) => {
+      const question = currentQuestion.question7;
+      const choice = currentQuestion.choices;
+      $('#titleQuestion7').append(`${question}`);
+      $('#toothbrush').append(`<h3>${choice.a}</h3>`);
+      $('#plasticBags').append(`<h3>${choice.b}</h3>`);
+      $('#icedCoffee').append(`<h3>${choice.c}</h3>`);
+      $('#shampoo').append(`<h3>${choice.d}</h3>`);
+   });
+
+   quizQuestion8.forEach((currentQuestion) => {
+      const question = currentQuestion.question8;
+      const choice = currentQuestion.choices;
+      $('#titleQuestion8').append(`${question}`);
+      $('#bottleCaps').append(`<h3>${choice.a}</h3>`);
+      $('#lotionBottle').append(`<h3>${choice.b}</h3>`);
+      $('#juice').append(`<h3>${choice.c}</h3>`);
+      $('#blackPlastic2').append(`<h3>${choice.d}</h3>`);
+   });
 

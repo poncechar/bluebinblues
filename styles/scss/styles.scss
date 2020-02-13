@@ -20,6 +20,7 @@ h3 {
    padding: 0;
    margin-bottom: 2rem;
    font-size: 1.5rem;
+   
 }
 
 span {
@@ -79,10 +80,27 @@ h1,
 .quizImageContainer img {
    flex-direction: row;
    flex-wrap: wrap;
-   width: calc(100% - 10px);
+   width: calc(100% - 15px);
    margin-bottom: 10px;
 }
 
 .submitButton {
    margin: 5rem 0;
+}
+
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio]:checked + img {
+  -webkit-box-shadow: 8px 8px 0px 0px rgba(175,238,238,1);
+-moz-box-shadow: 8px 8px 0px 0px rgba(175,238,238,1);
+box-shadow: 8px 8px 0px 0px rgba(175,238,238,1);
 }
