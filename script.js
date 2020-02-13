@@ -182,18 +182,16 @@ let score = 0;
 
 $(function() {
 
-   $('form').submit(function(e){
-      e.preventDefault();
-   // check if answer is correct
-
       $("input[name='question1']").click(function(){
          const userAnswer = $("input[name='question1']:checked").val();
          const correctAnswer = 'coffeeCup';
 
          if (userAnswer === correctAnswer) {
             score++
+            console.log('correct');
          } else {
-            
+            score
+            console.log('not correct');
          }
       });
 
@@ -203,8 +201,10 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
+            console.log('correct');
          } else {
-            
+            score
+            console.log('not correct');
          }
       });
 
@@ -215,7 +215,7 @@ $(function() {
          if (userAnswer === correctAnswer) {
             score++
          } else {
-            console.log('not correct!')
+            score
          }
       });
 
@@ -226,7 +226,7 @@ $(function() {
          if (userAnswer === correctAnswer) {
             score++
          } else {
-
+            score
          }
       });
 
@@ -237,7 +237,7 @@ $(function() {
          if (userAnswer === correctAnswer) {
             score++
          } else {
-            
+            score
          }
       });
 
@@ -248,7 +248,7 @@ $(function() {
          if (userAnswer === correctAnswer) {
             score++
          } else {
-            
+            score
          }
       });
 
@@ -259,7 +259,7 @@ $(function() {
          if (userAnswer === correctAnswer) {
             score++
          } else {
-            
+            score
          }
       });
 
@@ -270,11 +270,7 @@ $(function() {
          if (userAnswer === correctAnswer) {
             score++
          } else {
-            
+            score
          }
       });
-
-
    });
-
-});

@@ -331,8 +331,8 @@ h1,
   opacity: .5;
 }
 
-.submitButton {
-  margin: 5rem 0;
+input[type=submit] {
+  margin-top: 2rem;
 }
 
 [type=radio] {
