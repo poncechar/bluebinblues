@@ -1,3 +1,10 @@
+$('button').click(function () {
+   $('html,body').animate({
+      scrollTop: $('#startOff').offset().top
+   },
+      'slow');
+});
+
 const quizQuestion1 = [
    {
       question1: 'Which of the following should <span class="highlight">*!~NEVER~!*</span> go in the blue bin?',
@@ -93,17 +100,11 @@ const quizQuestion8 = [
    quizQuestion1.forEach((currentQuestion) => {
       const question1 = currentQuestion.question1;
       const quizChoice = currentQuestion.choices;
-      const correctAnswer = currentQuestion.choices.c;
       $('#titleQuestion1').append(`${question1}`);
       $('#aluminumCan').append(`<h3>${quizChoice.a}</h3>`);
       $('#milkBottle').append(`<h3>${quizChoice.b}</h3>`);
       $('#coffeeCup').append(`<h3>${quizChoice.c}</h3>`);
       $('#beerBottles').append(`<h3>${quizChoice.d}</h3>`);
-
-      $('input').on('click', function(){
-         console.log('clicking!');
-      });
-
    });
 
       quizQuestion2.forEach((currentQuestion) => {
@@ -170,10 +171,105 @@ const quizQuestion8 = [
    quizQuestion8.forEach((currentQuestion) => {
       const question = currentQuestion.question8;
       const choice = currentQuestion.choices;
-      const correctAnswer = currentQuestion.choices.d;
       $('#titleQuestion8').append(`${question}`);
       $('#bottleCaps').append(`<h3>${choice.a}</h3>`);
       $('#lotionBottle').append(`<h3>${choice.b}</h3>`);
       $('#juice').append(`<h3>${choice.c}</h3>`);
       $('#blackPlastic2').append(`<h3>${choice.d}</h3>`);
    });
+
+
+$(function() {
+
+
+// check if answer is correct
+   $("input[name='question1']").click(function(){
+      const userAnswer = $("input[name='question1']:checked").val();
+      const correctAnswer = 'coffeeCup';
+
+      if (userAnswer === correctAnswer) {
+         console.log('correct!')
+      } else {
+         console.log('not correct!')
+      }
+   });
+
+   $("input[name='question2']").click(function () {
+      const userAnswer = $("input[name='question2']:checked").val();
+      const correctAnswer = 'waterBottles';
+
+      if (userAnswer === correctAnswer) {
+         console.log('correct!')
+      } else {
+         console.log('not correct!')
+      }
+   });
+
+   $("input[name='question3']").click(function () {
+      const userAnswer = $("input[name='question3']:checked").val();
+      const correctAnswer = 'iceCream';
+
+      if (userAnswer === correctAnswer) {
+         console.log('correct!')
+      } else {
+         console.log('not correct!')
+      }
+   });
+
+   $("input[name='question4']").click(function () {
+      const userAnswer = $("input[name='question4']:checked").val();
+      const correctAnswer = 'styrofoam';
+
+      if (userAnswer === correctAnswer) {
+         console.log('correct!')
+      } else {
+         console.log('not correct!')
+      }
+   });
+
+   $("input[name='question5']").click(function () {
+      const userAnswer = $("input[name='question5']:checked").val();
+      const correctAnswer = 'saladPackaging';
+
+      if (userAnswer === correctAnswer) {
+         console.log('correct!')
+      } else {
+         console.log('not correct!')
+      }
+   });
+
+   $("input[name='question6']").click(function () {
+      const userAnswer = $("input[name='question6']:checked").val();
+      const correctAnswer = 'receipt';
+
+      if (userAnswer === correctAnswer) {
+         console.log('correct!')
+      } else {
+         console.log('not correct!')
+      }
+   });
+
+   $("input[name='question7']").click(function () {
+      const userAnswer = $("input[name='question7']:checked").val();
+      const correctAnswer = 'toothbrush';
+
+      if (userAnswer === correctAnswer) {
+         console.log('correct!')
+      } else {
+         console.log('not correct!')
+      }
+   });
+
+   $("input[name='question8']").click(function () {
+      const userAnswer = $("input[name='question8']:checked").val();
+      const correctAnswer = 'blackPlastic2';
+
+      if (userAnswer === correctAnswer) {
+         console.log('correct!')
+      } else {
+         console.log('not correct!')
+      }
+   });
+
+
+})
