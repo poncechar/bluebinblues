@@ -13,8 +13,7 @@ const quizQuestion1 = [
          b: 'milk glass bottles',
          c: 'coffee cups',
          d: 'glass beer bottles',
-      },
-         correctAnswer: 'c'
+      }
    }];
 
 const quizQuestion2 = [
@@ -25,8 +24,7 @@ const quizQuestion2 = [
          b: 'coffee pods',
          c: 'coffee packaging',
          d: 'plastic water bottles (not the caps)',
-      },
-         correctAnswer: 'd'
+      }
    }];
 
 const quizQuestion3 = [
@@ -37,8 +35,7 @@ const quizQuestion3 = [
          b: 'egg cartons',
          c: 'mail packaging',
          d: 'milk carton',
-      },
-         correctAnswer: 'a'
+      }
    }];
 
 const quizQuestion4 = [
@@ -49,19 +46,17 @@ const quizQuestion4 = [
          b: 'yogurt cups',
          c: 'dirty pizza boxes',
          d: 'black plastic takeaway containers',
-      },
-         correctAnswer: 'a'
+      }
    }];
 const quizQuestion5 = [
    {
-      question5: 'It can be tricky figuring out what kinds of food packaging are actually recyclable.',
+      question5: 'Which of these food packaging <span class="highlight">does *not* belong</span> in the landfill?',
       choices: {
          a: 'frozen food boxes',
          b: 'chip bags',
          c: 'plastic salad packaging',
          d: 'stand-up food pouches',
-      },
-         correctAnswer: 'c'
+      }
    }];
 const quizQuestion6 = [
    {
@@ -71,8 +66,7 @@ const quizQuestion6 = [
          b: 'paper shopping bags',
          c: 'magazines',
          d: 'books',
-      },
-         correctAnswer: 'a'
+      }
    }];
 const quizQuestion7 = [
    {
@@ -82,8 +76,7 @@ const quizQuestion7 = [
          b: 'plastic bags',
          c: 'plastic coffee cups',
          d: 'shampoo bottles',
-      },
-         correctAnswer: 'a'
+      }
    }];
 const quizQuestion8 = [
    {
@@ -93,8 +86,7 @@ const quizQuestion8 = [
          b: 'lotion bottles',
          c: 'plastic juice bottles',
          d: 'black plastic takeaway containers',
-      },
-         correctAnswer: 'd'
+      }
    }];
 
    quizQuestion1.forEach((currentQuestion) => {
@@ -277,6 +269,7 @@ $(function() {
 
    $('form').on('submit', function(e) {
       e.preventDefault();
-      $('.finalScoreContainer').html(`<h2>You got ${score} out of 8 correct!</h2>`)
+      $('.finalScoreContainer').html(`<h2 class="score"><span class="highlight">You got ${score} out of 8 correct!</span></h2>
+      <img src="https://media.giphy.com/media/3o7TKwxYkeW0ZvTqsU/source.gif">`)
    });
 

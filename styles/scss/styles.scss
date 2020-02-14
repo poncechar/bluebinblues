@@ -11,6 +11,7 @@ h1 {
 }
 
 h2 {
+   padding: 1rem;
    font-size: 1.8rem;
 }
 
@@ -52,7 +53,12 @@ input[type=submit] {
    box-shadow: 7px 7px 0px 0px rgba(255,255,255,1);
 }
 
-button:hover {
+input[type=submit] {
+   margin: 5rem;
+}
+
+button:hover,
+input[type=submit]:hover {
    color: #000000;
 	cursor: pointer;
 	background: paleturquoise;
@@ -81,21 +87,20 @@ h1,
 
 .quizImageContainer {
    display: flex;
-}
-
-.finalScoreContainer {
-   max-width: 900px;
-   margin: 0 auto;
-   text-align: center;
-   padding: 4rem 0;
+   flex: 1 1 50%;
 }
 
 .quizImageContainer img {
    flex-direction: row;
    flex-wrap: wrap;
-   width: calc(100% - 15px);
-   margin-bottom: 10px;
+   width: 100%;
+   margin-bottom: 0.5rem;
 }
+
+.quizOption {
+   padding: 1rem;
+}
+
 .quizOption img {
    opacity: 1;
    transition: .3s ease-in-out;
@@ -124,4 +129,15 @@ input[type=submit] {
   -webkit-box-shadow: 9px 9px 0px 0px rgba(175,238,238,1);
 -moz-box-shadow: 9px 9px 0px 0px rgba(175,238,238,1);
 box-shadow: 9px 9px 0px 0px rgba(175,238,238,1);
+}
+
+.finalScoreContainer {
+   max-width: 900px;
+   margin: 0 auto;
+   text-align: center;
+   padding: 4rem 0;
+}
+
+.score {
+   font-size: 2.5rem;
 }
