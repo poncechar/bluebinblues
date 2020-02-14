@@ -11,9 +11,7 @@ h1 {
 }
 
 h2 {
-   margin-top: 3rem;
-   margin-bottom: 0;
-   font-size: 2.1rem;
+   font-size: 1.8rem;
 }
 
 h3 {
@@ -26,6 +24,10 @@ h3 {
 
 h4 {
    font-size: 1.2rem;
+}
+
+.quizContainer2 h2 {
+   padding: 2rem;
 }
 
 .cityHeader {
@@ -69,18 +71,11 @@ h1,
    margin-top: 2rem;
 }
 
-.quizContainer1,
-.quizContainer2,
-.finalQuizContainer {
-   padding-bottom: 6rem;
-}
-
 .quizContainer2 {
    background-color: whitesmoke;
 }
 
 .question {
-   padding: 4rem;
    text-align: center;
 }
 

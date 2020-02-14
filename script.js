@@ -43,7 +43,7 @@ const quizQuestion3 = [
 
 const quizQuestion4 = [
    {
-      question4: 'Take-away food containers can easily contaminate the recycling stream if not carefully disposed of. Contrary to popular belief, unfortunately not all are recyclable 🥺',
+      question4: 'Which container belongs in the blue bin <span class="highlight">(when fully rinsed)</span>?',
       choices: {
          a: 'styrofoam',
          b: 'yogurt cups',
@@ -76,7 +76,7 @@ const quizQuestion6 = [
    }];
 const quizQuestion7 = [
    {
-      question7: 'Along with paper materials, not all plastics are recyclable. Canada recycles just 9% of its plastics with the rest dumped in landfill and incinerators or tossed away as litter.',
+      question7: 'Along with paper materials, not all plastics are recyclable. Canada recycles just 9% of its plastics with the rest dumped in landfill or tossed away as litter.',
       choices: {
          a: 'toothbrushes',
          b: 'plastic bags',
@@ -275,7 +275,7 @@ $(function() {
       });
    });
 
-   $('form').on('submit', function (e) {
+   $('form').on('submit', function(e) {
       e.preventDefault();
       $('.finalScoreContainer').html(`<h2>You got ${score} out of 8 correct!</h2>`)
    });
