@@ -202,10 +202,10 @@ $(function() {
             alert('♻️correct!♻️ water bottles are the only recyclable option in the list (the caps arent so dont include those in the blue bin')
          } if (userAnswer === 'brokenGlass') {
             score
-            alert('❌wrong!❌ broken glass belongs in the trash. make sure you wrap the shards in a plastic bag or non-recyclable container');
+            alert('❌wrong!❌ broken glass belongs in the trash. make sure you wrap the shards in a plastic bag or non-recyclable container before you toss!');
          } if (userAnswer === 'coffeePods') {
             score
-            alert('❌wrong!❌ coffee pods used for Keurigs and Nespresso machines should never go in the blue bin');
+            alert('❌wrong!❌ coffee pods used for keurigs and nespresso machines should never go in the blue bin');
          } if (userAnswer === 'coffeeBags') {
             score
             alert('❌wrong!❌ coffee bags belong in the trash. If it is paper coated with a thin plastic film, like coffee cups are, it cannot be recycled because the mixed materials cannot be separated.')
@@ -259,13 +259,13 @@ $(function() {
             alert('♻️correct!♻️ plastic salad packaging IS RECYCLABLE! phew!')
          } if (userAnswer === 'frozenFoodBoxes') {
             score
-            alert('❌wrong!❌ crazy, i know... frozen food boxes are lined with plastic and wax that help preserve its contents. THEY BELONG IN THE TRASH!')
+            alert('❌wrong!❌ CRAZY, i know... frozen food boxes are lined with plastic and wax that help preserve its contents. THEY BELONG IN THE TRASH!')
          } if (userAnswer === 'chipBag') {
             score
-            alert('❌wrong!❌ crazy, i know... chip bags are sadly not recyclable. The shiny lining is often aluminum or a special mixed plastic that cannot be separated in the recycling process. THEY BELONG IN THE TRASH!')
+            alert('❌wrong!❌ CRAZY, i know... chip bags are sadly not recyclable. The shiny lining is often aluminum or a special mixed plastic that cannot be separated in the recycling process. THEY BELONG IN THE TRASH!')
          } if (userAnswer === 'standUp') {
             score
-            alert('❌wrong!❌ crazy, i know... standup food pouches are sadly not recyclable. a lot of food & drink pouches are made from mixed materials that cannot be separated in the recycling process. THEY BELONG IN THE TRASH!')
+            alert('❌wrong!❌ CRAZY, i know... standup food pouches are sadly not recyclable. most food & drink pouches are made from mixed materials that cannot be separated in the recycling process. THEY BELONG IN THE TRASH!')
          }
       });
 
@@ -278,13 +278,13 @@ $(function() {
             alert('♻️correct!♻️ thermal receipts are not recyclable and belong in the trash!')
          } if (userAnswer === 'shoppingBag') {
             score
-            alert('❌wrong!❌ paper shopping bags belong in the blue bin!')
+            alert('❌wrong!❌ paper shopping bags can be reused or put in the blue bin!')
          } if (userAnswer === 'magazines') {
             score
             alert('❌wrong!❌ magazines belong in the blue bin!')
          } if (userAnswer === 'books') {
             score
-            alert('❌wrong!❌ books can either be recycled OR donated!')
+            alert('❌wrong!❌ books can be donated or put in the blue bin!')
          }
       });
 
@@ -294,16 +294,16 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
-            alert('♻️correct!♻️ toothbrushes are one of the most complicated items that are collected for recycling across the board simply because they’re made up of three different components')
+            alert('♻️correct!♻️ toothbrushes are one of the most complicated items that are collected for recycling across the board simply because they’re made up of three different components :((')
          } if (userAnswer === 'plasticBags') {
             score
-            alert('❌wrong!❌ the city of toronto accepts plastic bags in their recycling program')
+            alert('❌wrong!❌ the city of toronto accepts plastic bags in their recycling program!')
          } if (userAnswer === 'icedCoffee') {
             score
-            alert('❌wrong!❌ the city of toronto accepts plastic coffee cups in their recycling program')
+            alert('❌wrong!❌ the city of toronto accepts plastic coffee cups in their recycling program!')
          } if (userAnswer === 'shampoo') {
             score
-            alert('❌wrong!❌ the city of toronto accepts an assortment of shampoo bottles in their recycling program')
+            alert('❌wrong!❌ the city of toronto accepts an assortment of shampoo bottles in their recycling program!')
          }
       });
 
