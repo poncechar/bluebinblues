@@ -217,8 +217,8 @@ html, body {
 .doodle {
   position: absolute;
   width: 12%;
-  top: 33%;
-  right: 9%;
+  top: 39%;
+  right: 11%;
 }
 
 h1 {
@@ -231,7 +231,7 @@ h1 {
 }
 
 h2 {
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1.8rem;
 }
 
@@ -249,10 +249,6 @@ h4 {
 
 .quizContainer2 h2 {
   padding: 2rem;
-}
-
-.cityHeader {
-  margin-top: 1rem;
 }
 
 span {
@@ -310,16 +306,16 @@ h1,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
 }
 
 .quizImageContainer img {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
@@ -369,4 +365,24 @@ input[type=submit] {
 
 .score {
   font-size: 2.5rem;
+}
+
+@media (max-width: 550px) {
+  h2 {
+    padding: 0 4rem;
+    margin: 2rem;
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  .doodle {
+    visibility: hidden;
+  }
+  .quizImageContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

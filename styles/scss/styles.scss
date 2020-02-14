@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-   padding: 1rem;
+   padding: 0.5rem;
    font-size: 1.8rem;
 }
 
@@ -29,10 +29,6 @@ h4 {
 
 .quizContainer2 h2 {
    padding: 2rem;
-}
-
-.cityHeader {
-   margin-top: 1rem;
 }
 
 span {
@@ -87,11 +83,11 @@ h1,
 
 .quizImageContainer {
    display: flex;
+   flex-direction: row;
    flex: 1 1 50%;
 }
 
 .quizImageContainer img {
-   flex-direction: row;
    flex-wrap: wrap;
    width: 100%;
    margin-bottom: 0.5rem;
@@ -140,4 +136,23 @@ box-shadow: 9px 9px 0px 0px rgba(175,238,238,1);
 
 .score {
    font-size: 2.5rem;
+}
+
+@media (max-width: 550px) {
+   h2 {
+      padding: 0 4rem;
+      margin: 2rem;
+      font-size: 1.6rem;
+   }
+
+   h3 {
+      font-size: 1.3rem;
+   }
+
+   .doodle {
+   visibility: hidden;
+   }
+   .quizImageContainer {
+      flex-direction: column;
+   }
 }

@@ -271,5 +271,9 @@ $(function() {
       e.preventDefault();
       $('.finalScoreContainer').html(`<h2 class="score"><span class="highlight">You got ${score} out of 8 correct!</span></h2>
       <img src="https://media.giphy.com/media/3o7TKwxYkeW0ZvTqsU/source.gif">`)
+      // $('.finalScoreContainer').append('<button id="restartButton">Play Again</button>');
+      // $('#restartButton').click(function () {
+      //    score = 0;
+      // })
    });
 
