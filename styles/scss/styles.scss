@@ -138,6 +138,10 @@ box-shadow: 9px 9px 0px 0px rgba(175,238,238,1);
    font-size: 2.5rem;
 }
 
+.swal-text {
+   text-align: center;
+}
+
 @media (max-width: 550px) {
    h2 {
       padding: 0 2rem;
