@@ -179,17 +179,17 @@ $(function() {
          const correctAnswer = 'coffeeCup';
 
          if (userAnswer === correctAnswer) {
-            alert('♻️correct!♻️ coffee cups r mean and belong in the trash');
+            swal('♻️correct!♻️', 'coffee cups are mean and belong in the trash', 'success');
             score++
          } if (userAnswer === 'can') {
             score
-            alert('❌wrong!❌ aluminum cans are recyclabe');
+            swal('wrong!', 'aluminum cans are recyclabe', 'error');
          } if (userAnswer === 'milkBottle') {
             score
-            alert('❌wrong!❌ glass milk bottles are recyclabe');
+            swal('wrong!', 'glass milk bottles are recyclabe', 'error');
          } if (userAnswer === 'beerBottles') {
             score
-            alert('❌wrong!❌ beer bottles cans are recyclabe');
+            swal('wrong!', 'beer bottles cans are recyclabe', 'error');
          }
       });
 
@@ -199,16 +199,16 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
-            alert('♻️correct!♻️ water bottles are the only recyclable option in the list (the caps arent so dont include those in the blue bin')
+            swal('♻️correct!♻️', 'water bottles are the only recyclable option in the list (the caps arent so dont include those in the blue bin', 'success');
          } if (userAnswer === 'brokenGlass') {
             score
-            alert('❌wrong!❌ broken glass belongs in the trash. make sure you wrap the shards in a plastic bag or non-recyclable container before you toss!');
+            swal('wrong!', 'broken glass belongs in the trash. make sure you wrap the shards in a plastic bag or non-recyclable container before you toss!', 'error');
          } if (userAnswer === 'coffeePods') {
             score
-            alert('❌wrong!❌ coffee pods used for keurigs and nespresso machines should never go in the blue bin');
+            swal('wrong!', 'coffee pods used for keurigs and nespresso machines should never go in the blue bin', 'error');
          } if (userAnswer === 'coffeeBags') {
             score
-            alert('❌wrong!❌ coffee bags belong in the trash. If it is paper coated with a thin plastic film, like coffee cups are, it cannot be recycled because the mixed materials cannot be separated.')
+            swal('wrong!', 'coffee bags belong in the trash. If it is paper coated with a thin plastic film, like coffee cups are, it cannot be recycled because the mixed materials cannot be separated.', 'error')
          }
       });
 
@@ -218,16 +218,16 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
-            alert('♻️correct!♻️ unfortunately, ice cream containers are NOT accepted in the blue bin! v sad....')
+            swal('♻️correct!♻️', 'unfortunately, ice cream containers are NOT accepted in the blue bin :(', 'success')
          } if (userAnswer === 'eggCarton') {
             score
-            alert('❌wrong!❌ egg cartons are recyclable!')
+            swal('wrong!', 'egg cartons are recyclable!', 'error')
          } if (userAnswer === 'package') {
             score
-            alert('❌wrong!❌ mail packages are recyclable! (just make sure they dont have any interal bubblewrapping)')
+            swal('wrong!', 'mail packages are recyclable! (just make sure they dont have any interal bubblewrapping)', 'error')
          } if (userAnswer === 'milkCarton') {
             score
-            alert('❌wrong!❌ milk cartons are recyclable!')
+            swal('wrong!', 'milk cartons are recyclable!', 'error')
          }
       });
 
@@ -237,16 +237,16 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
-            alert('♻️correct!♻️ styrofoam is completely recyclable in the city of toronto IF rinsed and cleaned properly. *(plz rinse all of your takeout containers before you recycle them)*')
+            swal('♻️correct!♻️', 'styrofoam is completely recyclable in the city of toronto IF rinsed and cleaned properly. *(always rinse all of your takeout containers before you recycle them)*', 'success')
          } if (userAnswer === 'yogurtCup') {
             score
-            alert('❌(sorta) wrong!❌ The problem is that many curbside recycling programs no longer accept polypropylene plastic (the plastic made up of yogurt containers) because it has little recyclable value')
+            swal('(sorta) wrong!', 'The problem is that many curbside recycling programs no longer accept polypropylene plastic (the plastic made up of yogurt containers) because it has little recyclable value', 'error')
          } if (userAnswer === 'pizzaBox') {
             score
-            alert('❌wrong!❌ pizza boxes that have grease residue are NOT recyclable! (you can rip apart the non-greased bits and recycle them + compost/toss the remaining)')
+            swal('wrong!', 'pizza boxes that have grease residue are NOT recyclable! (you can rip apart the non-greased bits and recycle them + compost/toss the remaining)', 'error')
          } if (userAnswer === 'blackPlastic1') {
             score
-            alert('❌wrong!❌ black plastic takeaway containers are NOOOOOOOOOOOOOOOOOOT recyclable! srsly!! black plastic is mean and evil!')
+            swal('wrong!', 'black plastic takeaway containers are NOOOT recyclable!', 'error')
          }
       });
 
@@ -256,16 +256,16 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
-            alert('♻️correct!♻️ plastic salad packaging IS RECYCLABLE! phew!')
+            swal('♻️correct!♻️', 'plastic salad packaging IS RECYCLABLE! phew!', 'success')
          } if (userAnswer === 'frozenFoodBoxes') {
             score
-            alert('❌wrong!❌ CRAZY, i know... frozen food boxes are lined with plastic and wax that help preserve its contents. THEY BELONG IN THE TRASH!')
+            swal('wrong!', 'Frozen food boxes are lined with plastic and wax that help preserve its contents. THEY BELONG IN THE TRASH!', 'error')
          } if (userAnswer === 'chipBag') {
             score
-            alert('❌wrong!❌ CRAZY, i know... chip bags are sadly not recyclable. The shiny lining is often aluminum or a special mixed plastic that cannot be separated in the recycling process. THEY BELONG IN THE TRASH!')
+            swal('wrong!', 'Chip bags are sadly not recyclable. The shiny lining is often aluminum or a special mixed plastic that cannot be separated in the recycling process. THEY BELONG IN THE TRASH!', 'error')
          } if (userAnswer === 'standUp') {
             score
-            alert('❌wrong!❌ CRAZY, i know... standup food pouches are sadly not recyclable. most food & drink pouches are made from mixed materials that cannot be separated in the recycling process. THEY BELONG IN THE TRASH!')
+            swal('wrong!', 'Standup food pouches are sadly not recyclable. most food & drink pouches are made from mixed materials that cannot be separated in the recycling process. THEY BELONG IN THE TRASH!',)
          }
       });
 
@@ -275,16 +275,16 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
-            alert('♻️correct!♻️ thermal receipts are not recyclable and belong in the trash!')
+            swal('♻️correct!♻️', 'thermal receipts are not recyclable and belong in the trash!', 'success')
          } if (userAnswer === 'shoppingBag') {
             score
-            alert('❌wrong!❌ paper shopping bags can be reused or put in the blue bin!')
+            swal('wrong!', 'paper shopping bags can be reused or put in the blue bin!', 'error')
          } if (userAnswer === 'magazines') {
             score
-            alert('❌wrong!❌ magazines belong in the blue bin!')
+            swal('wrong!', 'magazines belong in the blue bin!', 'error')
          } if (userAnswer === 'books') {
             score
-            alert('❌wrong!❌ books can be donated or put in the blue bin!')
+            swal('wrong!', 'books can be donated or put in the blue bin!', 'error')
          }
       });
 
@@ -294,16 +294,16 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
-            alert('♻️correct!♻️ toothbrushes are one of the most complicated items that are collected for recycling across the board simply because they’re made up of three different components :((')
+            swal('♻️correct!♻️', 'toothbrushes are one of the most complicated items that are collected for recycling across the board simply because they’re made up of three different components :(', 'success')
          } if (userAnswer === 'plasticBags') {
             score
-            alert('❌wrong!❌ the city of toronto accepts plastic bags in their recycling program!')
+            swal('wrong!', 'the city of toronto accepts plastic bags in their recycling program!', 'error')
          } if (userAnswer === 'icedCoffee') {
             score
-            alert('❌wrong!❌ the city of toronto accepts plastic coffee cups in their recycling program!')
+            swal('wrong!', 'the city of toronto accepts plastic coffee cups in their recycling program!', 'error')
          } if (userAnswer === 'shampoo') {
             score
-            alert('❌wrong!❌ the city of toronto accepts an assortment of shampoo bottles in their recycling program!')
+            swal('wrong!', 'the city of toronto accepts an assortment of shampoo bottles in their recycling program!', 'error')
          }
       });
 
@@ -313,16 +313,16 @@ $(function() {
 
          if (userAnswer === correctAnswer) {
             score++
-            alert('♻️correct!♻️ black plastic doesnt reflect light, so can not be detected by sorting technology! wow! BLACK PLASTIC = RUDE')
+            swal('♻️correct!♻️', "black plastic doesn't reflect light, so can not be detected by sorting technology! wow!", 'success')
          } if (userAnswer === 'bottleCaps') {
             score
-            alert('❌wrong!❌ plastic waterbottle caps belong in the trash!')
+            swal('wrong!', 'plastic waterbottle caps belong in the trash!', 'error')
          } if (userAnswer === 'lotionBottle') {
             score
-            alert(`❌wrong!❌ most lotion bottles are accepted in the city of toronto's recycling program!`)
+            swal('wrong!', "most lotion bottles are accepted in the city of toronto's recycling program!", 'error')
          } if (userAnswer === 'juice') {
             score
-            alert('❌wrong!❌ plastic juice containers are recyclable!')
+            swal('wrong!', 'plastic juice containers are recyclable!', 'error')
          }
       });
    });
